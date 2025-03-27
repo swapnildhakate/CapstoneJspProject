@@ -1,0 +1,293 @@
+/* Reset default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with a dashing light background */
+body {
+    background-color: #F5F7FA; /* Light pastel blue-gray */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container styling for all pages */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #FFFFFF; /* White card-like background */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Headings with dashing light colors */
+h1 {
+    text-align: center;
+    color: #FF6F91; /* Pastel coral for welcome message */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #6B7280; /* Light grayish-blue */
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #34C759; /* Pastel green */
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Stylish button styles for all buttons */
+input[type="submit"],
+button,
+a.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px; /* Smooth rounded edges */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effects */
+    margin: 5px;
+}
+
+/* Default button style (e.g., Login, Add, Enroll, Edit, Delete) */
+input[type="submit"],
+button,
+a.button {
+    background-color: #A3E635; /* Light lime green */
+    color: #FFFFFF;
+}
+
+input[type="submit"]:hover,
+button:hover,
+a.button:hover {
+    background-color: #84CC16; /* Darker lime green */
+    transform: translateY(-3px); /* Slight lift */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Update button style */
+input[type="submit"][value="Update"],
+button.update {
+    background-color: #60A5FA; /* Light blue */
+}
+
+input[type="submit"][value="Update"]:hover,
+button.update:hover {
+    background-color: #3B82F6; /* Darker blue */
+}
+
+/* Delete button style */
+input[type="submit"][value="Delete"],
+button.delete {
+    background-color: #A3E635; /* Light lime green (same as default) */
+}
+
+input[type="submit"][value="Delete"]:hover,
+button.delete:hover {
+    background-color: #EF4444; /* Darker red on hover */
+    transform: translateY(-3px); /* Slight lift */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Edit button style (for <a> links) */
+a.button.edit {
+    background-color: #A3E635; /* Light lime green (same as default) */
+    color: #FFFFFF;
+    padding: 12px 24px; /* Match padding of other buttons */
+}
+
+a.button.edit:hover {
+    background-color: #A855F7; /* Darker purple on hover */
+    transform: translateY(-3px); /* Slight lift */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* General link styling */
+a {
+    color: #60A5FA; /* Light blue */
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #3B82F6; /* Darker blue */
+    text-decoration: underline;
+}
+
+/* Form input styling with light colors */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #D1D5DB; /* Light gray border */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #F9FAFB; /* Very light gray background */
+    color: #374151; /* Dark gray text */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #60A5FA; /* Light blue on focus */
+    outline: none;
+}
+
+/* Table styling with dashing light colors */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden; /* For rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #E5E7EB; /* Light gray border */
+}
+
+th {
+    background-color: #E0E7FF; /* Light indigo header */
+    color: #4B5563; /* Darker gray text */
+    font-weight: 600;
+}
+
+td {
+    color: #374151; /* Dark gray text */
+}
+
+tr:hover {
+    background-color: #F3F4F6; /* Light gray hover */
+}
+
+/* Error message styling */
+.error {
+    color: #F87171; /* Light red */
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #FEE2E2; /* Very light red background */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Specific styling for front page (login.jsp) */
+.front-page {
+    background: linear-gradient(135deg, #F5F7FA 0%, #E0E7FF 100%); /* Gradient background */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front-page .container {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    padding: 40px;
+}
+
+/* Admin Dashboard Styling */
+.admin-dashboard {
+    background: linear-gradient(135deg, #E0E7FF 0%, #F5F7FA 100%); /* Light indigo gradient */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-dashboard .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    text-align: center;
+}
+
+.admin-dashboard h2 {
+    color: #4B5563; /* Darker gray for contrast */
+    margin-bottom: 30px;
+}
+
+.admin-dashboard a {
+    display: block;
+    width: 60%;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #C084FC; /* Light purple */
+    color: #FFFFFF;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.admin-dashboard a:hover {
+    background-color: #A855F7; /* Darker purple */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+/* User Dashboard Styling */
+.user-dashboard {
+    background: linear-gradient(135deg, #D1FAE5 0%, #F5F7FA 100%); /* Light green gradient */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-dashboard .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    text-align: center;
+}
+
+.user-dashboard h2 {
+    color: #4B5563; /* Darker gray for contrast */
+    margin-bottom: 30px;
+}
+
+.user-dashboard a {
+    display: block;
+    width: 60%;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #34C759; /* Pastel green */
+    color: #FFFFFF;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.user-dashboard a:hover {
+    background-color: #2D9C4A; /* Darker green */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
