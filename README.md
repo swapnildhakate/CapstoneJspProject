@@ -47,8 +47,8 @@ BatchManagementSystem/
 │   │       ├── user/                # User JSP files
 │   │       │   ├── dashboard.jsp
 │   │       │   ├── manageEnrollments.jsp
-  │   │       │   └── register.jsp              
-  │   │       ├── style.css          # Styling
+│   │       │   └── register.jsp              
+│   │       ├── style.css          # Styling
 │   │       ├── login.jsp            # Login page (welcome file)
 │   │       └── logout.jsp           # Logout page
 └── pom.xml                          # Maven configuration
