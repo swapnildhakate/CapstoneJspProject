@@ -1,4 +1,4 @@
-# Yamin's Zumba Studio - Batch Management System
+# Yamin's Zumba Studio - Zumba (Batch) Management System
 
 ## Overview
 Yamin's Zumba Studio is a web application designed to streamline Zumba class management. Built with Maven, JSP, MySQL, and Tomcat, it provides:
