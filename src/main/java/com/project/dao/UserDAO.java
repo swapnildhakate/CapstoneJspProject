@@ -117,7 +117,7 @@ public class UserDAO {
         }
     }
 
-    // New method: Get enrolled batches for a user
+    //Get enrolled batches for a user
     public List<Batch> getEnrolledBatches(int userId) {
         List<Batch> enrolledBatches = new ArrayList<>();
         String query = "SELECT b.* FROM batch b JOIN enrollment e ON b.batch_id = e.batch_id WHERE e.user_id = ?";
@@ -140,7 +140,7 @@ public class UserDAO {
         return enrolledBatches;
     }
 
-    // New method: Update enrollment (change batch for a user)
+    //Update enrollment (change batch for a user)
     public boolean updateEnrollment(int userId, int oldBatchId, int newBatchId) {
         String query = "UPDATE enrollment SET batch_id = ? WHERE user_id = ? AND batch_id = ?";
         try (Connection conn = DBUtil.getConnection();
@@ -155,7 +155,7 @@ public class UserDAO {
         }
     }
 
-    // New method: Delete enrollment
+    //Delete enrollment
     public boolean deleteEnrollment(int userId, int batchId) {
         String query = "DELETE FROM enrollment WHERE user_id = ? AND batch_id = ?";
         try (Connection conn = DBUtil.getConnection();
@@ -169,7 +169,7 @@ public class UserDAO {
         }
     }
 
-    // New method: Get all enrollments with user and batch details
+    //Get all enrollments with user and batch details
     public List<Object[]> getAllEnrollments() {
         List<Object[]> enrollments = new ArrayList<>();
         String query = "SELECT u.username, u.email, b.batch_name, b.start_date, b.end_date, b.time " +
@@ -194,4 +194,5 @@ public class UserDAO {
         }
         return enrollments;
     }
+
 }

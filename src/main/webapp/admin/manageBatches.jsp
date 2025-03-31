@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.project.dao.BatchDAO, com.project.bean.Batch, java.util.*, java.text.SimpleDateFormat, java.sql.*" %>
+<%@ page import="com.project.dao.BatchDAO, com.project.bean.Batch,
+java.util.*, java.text.SimpleDateFormat, java.sql.*" %>
 <%
   // Restrict access to admin only
   if (session.getAttribute("role") == null || !session.getAttribute("role").equals("admin")) {

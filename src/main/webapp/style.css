@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Body styling with a dashing light background */
+/* Body styling with a light background */
 body {
     background-color: #F5F7FA; /* Light pastel blue-gray */
     font-family: 'Arial', sans-serif;
@@ -25,7 +25,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Headings with dashing light colors */
+/* Headings with light colors */
 h1 {
     text-align: center;
     color: #FF6F91; /* Pastel coral for welcome message */
@@ -156,7 +156,7 @@ select:focus {
     outline: none;
 }
 
-/* Table styling with dashing light colors */
+/* Table styling with light colors */
 table {
     width: 100%;
     border-collapse: collapse;

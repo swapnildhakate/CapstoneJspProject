@@ -7,9 +7,9 @@ public class Batch {
     private String batchName; // Will be "Morning" or "Evening"
     private Date startDate;
     private Date endDate;
-    private String time; // Will be selected from predefined times (e.g., "9:00 AM")
+    private String time;
 
-    // Default constructor
+
     public Batch() {}
 
     // Parameterized constructor
